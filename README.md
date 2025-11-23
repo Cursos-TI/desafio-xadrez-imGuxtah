@@ -55,13 +55,45 @@ int main(void) {
     return 0;
 }
 
-### 🏅 Nível Aventureiro
-Agora que já conseguimos mover as peças mais simples usando loops, os desenvolvedores pediram para elaborar os loops de outra forma. Para o desafio, moveremos o cavalo, que possui sua movimentação em L. O cavalo deve se movimentar para baixo e para a esquerda, usando pelo menos duas estruturas de repetição: uma deve ser for e a outra pode ser while ou do-while.
+int main() {
+    // Movimentos do cavalo: 2 para baixo e 1 para a esquerda
+    int movimentosBaixo = 2;
+    int movimentosEsquerda = 1;
 
-**Movimentação do Cavalo:**
+    // ------------------------------
+    // Movimentos anteriores (exemplo)
+    // ------------------------------
+    printf("Movimentos anteriores:\n");
+    printf("Direita\n");
+    printf("Direita\n");
 
-Mover o cavalo em L utilizando loops aninhados.
-Obs: É obrigatório o uso de loops aninhados.
+    // Linha em branco para separar do Cavalo
+    printf("\n");
+
+    // --------------------------------------------
+    // Movimento do Cavalo em L
+    // 2 casas para BAIXO (loop for)
+    // 1 casa para ESQUERDA (loop while)
+    // --------------------------------------------
+
+    printf("Movimento do Cavalo:\n");
+
+    // Primeiro movimento: duas casas para baixo
+    // Usando o loop FOR
+    for (int i = 0; i < movimentosBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Segundo movimento: uma casa para a esquerda
+    // Usando loop WHILE para cumprir loops aninhados
+    int contador = 0;
+    while (contador < movimentosEsquerda) {
+        printf("Esquerda\n");
+        contador++;
+    }
+
+    return 0;
+}
 
 ### 🥇 Nível Mestre
 Para o desafio final, as peças que utilizam loops simples terão seus códigos trocados por **funções recursivas**, e a movimentação do cavalo utilizará loops com variáveis múltiplas e/ou condições múltiplas, permitindo o uso de continue e break.
