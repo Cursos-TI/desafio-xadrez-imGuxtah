@@ -43,7 +43,7 @@ int main(void) {
     /* do...while garante que o bloco execute pelo menos uma vez (útil para certos testes) */
     if (CASAS_RAINHA > 0) {
         do {
-            printf("Esquerda\n");
+            printf("Direita\n");
             passo++;
         } while (passo < CASAS_RAINHA);
     } else {
@@ -56,9 +56,9 @@ int main(void) {
 }
 
 int main() {
-    // Movimentos do cavalo: 2 para baixo e 1 para a esquerda
-    int movimentosBaixo = 2;
-    int movimentosEsquerda = 1;
+    // Movimentos do cavalo: 2 para cima e 1 para a direita
+    int movimentosCima = 2;
+    int movimentosDireita = 1;
 
     // ------------------------------
     // Movimentos anteriores (exemplo)
@@ -67,33 +67,23 @@ int main() {
     printf("Direita\n");
     printf("Direita\n");
 
-    // Linha em branco para separar do Cavalo
     printf("\n");
-
-    // --------------------------------------------
-    // Movimento do Cavalo em L
-    // 2 casas para BAIXO (loop for)
-    // 1 casa para ESQUERDA (loop while)
-    // --------------------------------------------
 
     printf("Movimento do Cavalo:\n");
 
-    // Primeiro movimento: duas casas para baixo
-    // Usando o loop FOR
-    for (int i = 0; i < movimentosBaixo; i++) {
-        printf("Baixo\n");
+    for (int i = 0; i < movimentosCima; i++) {
+        printf("cima\n");
     }
 
-    // Segundo movimento: uma casa para a esquerda
-    // Usando loop WHILE para cumprir loops aninhados
     int contador = 0;
-    while (contador < movimentosEsquerda) {
-        printf("Esquerda\n");
+    while (contador < movimentosDireita) {
+        printf("direita\n");
         contador++;
     }
 
     return 0;
 }
+
 
 ### 🥇 Nível Mestre
 Para o desafio final, as peças que utilizam loops simples terão seus códigos trocados por **funções recursivas**, e a movimentação do cavalo utilizará loops com variáveis múltiplas e/ou condições múltiplas, permitindo o uso de continue e break.
